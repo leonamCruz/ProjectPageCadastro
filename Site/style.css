@@ -8,64 +8,106 @@
 }
 
 body {
+    padding: 10px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
-.geral {
-    padding: 15px;
+section {
+    padding: 35px;
     border-radius: 8px;
-    background: #FFFFFF;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    gap: 20px;
+    background: #FFFFFF;
+    width: 50%;
+}
+
+#cadastro {
+    align-self: center;
+}
+
+form {
+}
+
+.email {
+    width: 100%;
+    height: 35px;
+
 }
 #cadastro{
     align-self: center;
-}
-#nome {
-    width: 100%;
-    height: 36px;
-    border-radius: 8px;
-}
-
-#email {
-    width: 100%;
-    height: 36px;
-    border-radius: 8px;
-
-}
-
-#senha {
-    width: 100%;
-    height: 36px;
-    border-radius: 8px;
-}
-#sexo{
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    font-size: 55px;
 }
 #botao{
-    text-decoration: none;
+    column-gap: 20px;
+}
+.name {
+    height: 35px;
+    width: 100%;
+}
+
+.senha {
+    height: 35px;
+    width: 100%;
+}
+
+#botao {
+    font-weight: 100;
     font-size: 20px;
-    height: 36px;
-    width: 50%;
-    color: white;
-    border-radius: 8px;
-    background:linear-gradient(rgba(246, 83, 1, 1), rgba(231, 0, 252, 1));
-    border-style: none;
-    margin: 20px auto;
-    animation-delay: .10s;
+    color: #fff;
+    background-color: #ff8f18;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    border-radius: 43px 0;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 }
-#botao:hover{
-    transform: scale(105%);
-    animation: cubic-bezier(.85,.09,.42,.8);
+
+#botao:hover {
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+}
+#xexo{
+    padding: 5px;
+}
+#xexo:hover{
+    transform: scale(115%);
+    animation: cubic-bezier(.85, .09, .42, .8);
     transition: 1000ms;
-    background:linear-gradient(rgba(231, 0, 252, 1),rgba(246, 83, 1, 1));
 }
+.name:hover {
+    transform: scale(115%);
+    animation: cubic-bezier(.85, .09, .42, .8);
+    transition: 1000ms;
+}
+
+.senha:hover {
+    transform: scale(115%);
+    animation: cubic-bezier(.85, .09, .42, .8);
+    transition: 1000ms;
+}
+
+.email:hover {
+    transform: scale(115%);
+    animation: cubic-bezier(.85, .09, .42, .8);
+    transition: 1000ms;
+}
+
+
 
 
 

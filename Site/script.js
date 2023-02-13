@@ -1,34 +1,25 @@
-const formulario = document.querySelector("form")
-const _nome = document.querySelector(".name")
-const _email = document.querySelector(".email")
-const _senha = document.querySelector(".senha")
-const _sexo = document.querySelector('input[name=sexo]:checked')
+const form = document.querySelector('form');
+const nomeInput = document.querySelector('.name');
+const emailInput = document.querySelector('#emailInput');
+const senhaInput = document.querySelector('#senhaInput');
+const sexoSelect = document.querySelector('#xexo');
 
-formulario.addEventListener('submit',function (event){
+form.addEventListener('submit', function (event) {
     event.preventDefault()
-    cadastro()
-})
+    const nome = nomeInput.value;
+    const email = emailInput.value;
+    const senha = senhaInput.value;
+    const sexo = sexoSelect.value;
+    const cidadao = {nome,email,senha,sexo}
 
-function cadastro(){
-
-    const cidadao = {
-        nome: _nome.value,
-        email: _email.value,
-        senha: _senha.value,
-        sexo: _sexo || "Não informado"
-    }
-
+    console.log(nome, email, senha, sexo)
     fetch('http://localhost:8080/pessoa', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
         },
         body: JSON.stringify(cidadao)
-    }).then(function(res){console.log(res)})
-}
-function limpar(){
-        _nome.value ="",
-        _email.value="",
-        _senha.value="",
-        _sexo.checked = false
-}
+    }).then(function (res) {
+        console.log(res)
+    })
+})
