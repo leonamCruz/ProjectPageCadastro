@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/icon_bar.svg">
+    <meta name="author" content="Leonam Cruz">
+    <meta name="description" content="Tela de Cadastro experimental do Leonam Cruz">
+    <meta name="keywords" content="cadastro, java, spring, boot">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+<div class="geral">
+    <h1 id="cadastro">Cadastro</h1>
+    <form>
+        <input type="text" class="name" placeholder="Nome" id="nome">
+        <label for="nome"> </label>
+        <input id="email" class="email" placeholder="E-mail" type="email">
+        <label for="email"> </label>
+        <input id="senha" class="senha" type="password" placeholder="Senha">
+        <label for="senha"><br></label>
+        <div id="sexo">
+            Sexo:
+            <input required id="masculino" type="radio" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input required id="feminino" type="radio" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input required id="outro" type="radio" name="sexo" value="outro">
+            <label for="outro">Outro</label>
+        </div>
+        <button id="botao">Cadastrar</button>
+    </form>
+</div>
+</body>
+</html>
