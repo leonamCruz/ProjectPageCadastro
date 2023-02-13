@@ -1,4 +1,4 @@
-package model.entity;
+package tech.leonam.model.entity;
 
 import jakarta.persistence.*;
 
