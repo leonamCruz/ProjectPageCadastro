@@ -20,6 +20,6 @@ form.addEventListener('submit', function (event) {
         },
         body: JSON.stringify(cidadao)
     }).then(function (res) {
-        console.log(res)
+        console.log(res.status)
     })
 })
