@@ -14,7 +14,18 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    background: linear-gradient(318deg, #00ffbd, #ff00c8, #ff0000, #eeff00, #0027ff);
+    background-size: 1000% 1000%;
+
+    animation: AnimationName 31s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0 0
+    }
+    50%{background-position:93% 100%}
+    100%{background-position:0 0
+    }
 }
 
 section {
@@ -36,7 +47,12 @@ form {
 .email {
     width: 100%;
     height: 35px;
-
+    transition : 300ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 }
 #cadastro{
     align-self: center;
@@ -49,13 +65,24 @@ form {
 .name {
     height: 35px;
     width: 100%;
+    transition : 300ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 }
 
 .senha {
     height: 35px;
     width: 100%;
+    transition : 300ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
 }
-
 #botao {
     font-weight: 100;
     font-size: 20px;
@@ -65,7 +92,7 @@ form {
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
     border-radius: 43px 0;
-    transition : 1000ms;
+    transition : 300ms;
     transform: translateY(0);
     display: flex;
     flex-direction: row;
@@ -74,37 +101,59 @@ form {
 }
 
 #botao:hover {
-    transition : 1000ms;
+    transition : 300ms;
     padding: 10px 50px;
     transform : translateY(-0px);
     background-color: #ff0000;
     color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     border: none;
 }
 #xexo{
-    padding: 5px;
+    font-weight: 25;
+    font-size: 18px;
+    color: #000000;
+    padding: 10px 30px;
+    transition : 300ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
 }
 #xexo:hover{
-    transform: scale(115%);
-    animation: cubic-bezier(.85, .09, .42, .8);
-    transition: 1000ms;
+    transition : 300ms;
+    padding: 10px 50px;
+    transform : translateY(-0px);
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
 }
 .name:hover {
     transform: scale(115%);
     animation: cubic-bezier(.85, .09, .42, .8);
-    transition: 1000ms;
+    transition: 300ms;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
 .senha:hover {
     transform: scale(115%);
     animation: cubic-bezier(.85, .09, .42, .8);
-    transition: 1000ms;
+    transition: 300ms;
 }
 
 .email:hover {
     transform: scale(115%);
     animation: cubic-bezier(.85, .09, .42, .8);
-    transition: 1000ms;
+    transition: 300ms;
 }
 
 

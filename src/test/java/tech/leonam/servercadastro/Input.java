@@ -64,6 +64,7 @@ public class Input {
 
             webDriver.get(URL);
         }
+        webDriver.close();
     }
 }
 
