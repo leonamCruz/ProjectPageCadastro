@@ -12,15 +12,15 @@ import tech.leonam.service.PessoaServiceImplement;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)
-@RequestMapping("/pessoa")
-public class PessoaController {
+@RequestMapping("/cadastro")
+public class CadastroController {
     private final PessoaServiceImplement pessoaServiceImplement;
 
-    public PessoaController(PessoaServiceImplement pessoaServiceImplement) {
+    public CadastroController(PessoaServiceImplement pessoaServiceImplement) {
         this.pessoaServiceImplement = pessoaServiceImplement;
     }
 
-    @PostMapping()
+    @GetMapping()
     public ResponseEntity<Object> post(@RequestBody @Valid PessoaDTO pessoaDTO) {
         var pessoa = new Pessoa();
         var bCryptPasswordEncoder = new BCryptPasswordEncoder();

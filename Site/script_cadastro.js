@@ -13,7 +13,7 @@ form.addEventListener('submit', function (event) {
     const cidadao = {nome,email,senha,sexo}
 
     console.log(nome, email, senha, sexo)
-    fetch('http://localhost:8080/pessoa', {
+    fetch('http://localhost:8080/cadastro', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
