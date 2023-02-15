@@ -25,7 +25,7 @@ public class Input {
     private final String XPATH_SEXO_FEMININO = "//*[@id=\"xexo\"]/option[2]";
     private final String XPATH_SEXO_OUTRO = "//*[@id=\"xexo\"]/option[3]";
     private final String XPATH_SEXO_MASCULINO = "//*[@id=\"xexo\"]/option[1]";
-    private final String URL = "file:///C:/Users/leona/IdeaProjects/ProjectPageCadastro/Site/index.html";
+    private final String URL = "file:///C:/Users/leona/IdeaProjects/ProjectPageCadastro/Site/cadastro.html";
     @BeforeEach
     void setup() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\leona\\IdeaProjects\\ProjectPageCadastro\\src\\main\\resources\\chromedriver.exe");
