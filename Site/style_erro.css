@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(318deg, #00ffbd, #ff00c8, #ff0000, #eeff00, #0027ff);
+    background-size: 1000% 1000%;
+    padding: 50px;
+    animation: AnimationName 31s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0 0
+    }
+    50%{background-position:93% 100%}
+    100%{background-position:0 0
+    }
+}
+section{
+    background: #000000 ;
+    gap: 20px;
+    border-radius: 100px 10px;
+    padding: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}

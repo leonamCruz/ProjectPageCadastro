@@ -20,7 +20,7 @@ public class CadastroController {
         this.pessoaServiceImplement = pessoaServiceImplement;
     }
 
-    @GetMapping()
+    @PostMapping()
     public ResponseEntity<Object> post(@RequestBody @Valid PessoaDTO pessoaDTO) {
         var pessoa = new Pessoa();
         var bCryptPasswordEncoder = new BCryptPasswordEncoder();

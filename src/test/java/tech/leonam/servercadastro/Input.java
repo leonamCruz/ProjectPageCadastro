@@ -17,7 +17,6 @@ import java.util.Random;
 public class Input {
     private final String XPATH_CADASTRAR = "//*[@id=\"botao\"]";
     private WebDriver webDriver;
-    private Random random;
     private final String XPATH_NOME = "//*[@id=\"nome\"]";
     private final String XPATH_EMAIL = "//*[@id=\"emailInput\"]";
     private final String XPATH_SENHA = "//*[@id=\"senhaInput\"]";

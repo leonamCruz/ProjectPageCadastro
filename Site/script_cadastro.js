@@ -1,5 +1,5 @@
 const form = document.querySelector('form');
-const nomeInput = document.querySelector('.name');
+const nomeInput = document.querySelector('#nome');
 const emailInput = document.querySelector('#emailInput');
 const senhaInput = document.querySelector('#senhaInput');
 const sexoSelect = document.querySelector('#xexo');
@@ -16,7 +16,7 @@ form.addEventListener('submit', function (event) {
     fetch('http://localhost:8080/cadastro', {
         method: 'POST',
         headers: {
-            'Content-type': 'application/json',
+            'Content-type':'application/json',
         },
         body: JSON.stringify(cidadao)
     }).then(function (res) {
