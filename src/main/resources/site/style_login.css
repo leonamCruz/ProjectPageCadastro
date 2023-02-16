@@ -38,7 +38,7 @@ h1{
     margin-bottom: 20px;
     font-size: 40px;
 }
-#email{
+#emailL{
     width: 100%;
     height: 35px;
     transition : 300ms;
@@ -48,7 +48,7 @@ h1{
     align-items: center;
     cursor: pointer;
 }
-#senha{
+#senhaL{
     width: 100%;
     height: 35px;
     transition : 300ms;
@@ -58,13 +58,13 @@ h1{
     align-items: center;
     cursor: pointer;
 }
-#senha:hover {
+#senhaL:hover {
     transform: scale(115%);
     animation: cubic-bezier(.85, .09, .42, .8);
     transition: 300ms;
 }
 
-#email:hover {
+#emailL:hover {
     transform: scale(115%);
     animation: cubic-bezier(.85, .09, .42, .8);
     transition: 300ms;

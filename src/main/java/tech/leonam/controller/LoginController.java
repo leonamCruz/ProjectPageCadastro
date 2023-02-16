@@ -1,6 +1,7 @@
 package tech.leonam.controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tech.leonam.service.PessoaServiceImplement;
@@ -13,7 +14,9 @@ public class LoginController {
     public LoginController(PessoaServiceImplement pessoaServiceImplement) {
         this.pessoaServiceImplement = pessoaServiceImplement;
     }
+    @PostMapping()
+    public String logar(String email, char[] senha){
 
-
-
+        return "eita";
+    }
 }
